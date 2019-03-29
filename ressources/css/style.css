@@ -3,11 +3,11 @@ body {
     grid-template-columns: repeat (4, 1fr);
     grid-template-rows: repeat (5, auto);
     grid-gap: 20px;
-    grid-template-areas: "logo menu menu menu"
-        "breadcrumb breadcrumb breadcrumb breadcrumb"
-        "main main main main"
-        "profil profil profil profil"
-        "footer footer footer footer"
+    grid-template-areas:    "logo menu menu menu"
+                            "breadcrumb breadcrumb breadcrumb breadcrumb"
+                            "main main main main"
+                            "profil profil profil profil"
+                            "footer footer footer footer"
 }
 
 .box {
@@ -35,6 +35,7 @@ h1 {
 /* menu */
 
 .menu {
+    background-color: #fff;
     grid-column: span 3;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -309,12 +310,26 @@ a {
 
 /* responsive */
 
-@media only screen and (max-width: 768px) {
-    body {
-        background-color: #fff;
-        grid-template-areas: "logo menu menu menu"
-            "breadcrumb breadcrumb breadcrumb breadcrumb"
-            "main main main main"
-            "profil profil profil profil"
-            "footer footer footer footer"
+@media screen and (max-width: 768px) {
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr;
     }
+    .breadcrumb{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .theme {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+} 
+
+     
+        
+        
+        
