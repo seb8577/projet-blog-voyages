@@ -35,7 +35,7 @@ h1 {
 /* menu */
 
 .menu {
-    background-color: #fff;
+    background-color: #fff !important;
     grid-column: span 3;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
